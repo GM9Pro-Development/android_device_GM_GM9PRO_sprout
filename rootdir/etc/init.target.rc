@@ -153,6 +153,12 @@ on boot
     chown root system /sys/android_touch/wakeup_gesture_enable
     chmod 666 /sys/android_touch/wakeup_gesture_enable
 
+on property:enable_dt2w=false
+    write /sys/android_touch/wakeup_gesture_enable 0
+
+on property:enable_dt2w=true
+    write /sys/android_touch/wakeup_gesture_enable 1
+
 on property:sys.boot_completed=1
     setprop persist.vendor.dpm.nsrm 1
     setprop persist.vendor.dpm.feature 3
