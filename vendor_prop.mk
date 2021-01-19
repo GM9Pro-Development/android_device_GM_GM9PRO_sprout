@@ -57,7 +57,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.fm.a2dp.conc.disabled=true \
-    vendor.voice.path.for.pcm.voip=true
+    vendor.voice.path.for.pcm.voip=true \
+    vendor.audio.feature.compr_voip.enable=true \
+    vendor.audio.feature.kpi_optimize.enable=true \
+    vendor.audio.feature.fluence.enable=true \
+    vendor.audio.feature.custom_stereo.enable=true \
+    vendor.audio.feature.anc_headset.enable=true \
+    vendor.audio.feature.vbat.enabl=true \
+    vendor.audio.feature.fm.enable=true
 
 # Battery
 PRODUCT_PROPERTY_OVERRIDES += \
