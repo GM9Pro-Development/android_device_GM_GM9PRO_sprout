@@ -151,7 +151,7 @@ on boot
 
     # Double Tap to Wake
     chown root system /sys/android_touch/wakeup_gesture_enable
-    chmod 666 /sys/android_touch/wakeup_gesture_enable
+    chmod 0660 /sys/android_touch/wakeup_gesture_enable
 
 on property:enable_dt2w=false
     write /sys/android_touch/wakeup_gesture_enable 0
